@@ -82,5 +82,5 @@ Welcome Page for now
 ![profile](https://github.com/rituraj009/Flask-Firebase-Authentication/assets/102078863/56855b5a-b36c-4f60-9312-96c0b6ca104a)
 
 ## Contributing
-Contributions are very welcome! Feel free to fork the repository and submit pull requests. If you want to make major changes, please open an issue first to discuss what you'd like to change. If you encounter any issues or have any questions, don't hesitate to open an issue. We appreciate any feedback!
+Contributions are very welcome! Feel free to fork the repository and submit pull requests. If you want to make major changes, please open an issue first to discuss what you'd like to change. If you encounter any issues or have any questions, don't hesitate to open an issue. I appreciate any feedback!
 
