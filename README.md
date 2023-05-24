@@ -75,10 +75,11 @@ python app.py
 ```
 
 ## Screenshots
-![login](https://github.com/rituraj009/Flask-Firebase-Authentication/assets/102078863/145b7652-558a-46e4-87de-c82205d6cd52)
+![login](https://github.com/rituraj009/Flask-Firebase-Authentication/assets/102078863/68f50ef8-a3ef-4734-8007-bacdbe9d036f)
+
 
 Welcome Page for now
-![profile](https://github.com/rituraj009/Flask-Firebase-Authentication/assets/102078863/8ebf25be-02b5-4055-9a89-cee8b3d63043)
+![profile](https://github.com/rituraj009/Flask-Firebase-Authentication/assets/102078863/56855b5a-b36c-4f60-9312-96c0b6ca104a)
 
 ## Contributing
 Contributions are very welcome! Feel free to fork the repository and submit pull requests. If you want to make major changes, please open an issue first to discuss what you'd like to change. If you encounter any issues or have any questions, don't hesitate to open an issue. We appreciate any feedback!
