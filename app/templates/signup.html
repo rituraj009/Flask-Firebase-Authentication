@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask-Firebase-Signup</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'main.css') }}">
+    <style>
+      body {
+          background-image: url("{{ url_for('static', filename='1.jpg') }}");
+      }
+    </style>
+    <script>
+    function checkPasswordStrength(password) {
+        // At least one lower case letter, one upper case letter, one digit, one special character, and at least 8 characters long
+        var re = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+        return re.test(password);
+    }
+
+    function validateForm() {
+        var password = document.getElementById('password').value;
+        if (!checkPasswordStrength(password)) {
+            alert('Password must be at least 8 characters long, contain a lowercase letter, uppercase letter, a digit and a special character.');
+            return false;
+        }
+        return true;
+    }
+    </script>
+</head>
+<body>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <a href="/"><h2 class="inactive underlineHover"> Sign In </h2></a>
+    <h2 class="active">Sign Up </h2>
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="{{ url_for('static', filename = 'user.png') }}" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form action="{{ url_for('register') }}" method="POST" onsubmit="return validateForm()">
+      <input type="text" id="name" class="fadeIn second" name="name" placeholder="name">
+      <input type="email" id="login" class="fadeIn second" name="email" placeholder="email">
+      <input type="password" id="password" class="fadeIn third" name="pass" placeholder="password">
+      <input type="button" onclick="togglePasswordVisibility()" value="Show Password">
+      <input type="submit" class="fadeIn fourth" value="Sign Up">
+    </form>
+
+  </div>
+</div>
+<script>
+  function togglePasswordVisibility() {
+      var passwordInput = document.getElementById("password");
+      if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+      } else {
+          passwordInput.type = "password";
+      }
+  }
+</script>
+</body>
+</html>
